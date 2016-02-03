@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>681</width>
+    <height>437</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TestTask</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="3">
+     <widget class="QCommandLinkButton" name="exitButton">
+      <property name="text">
+       <string>Вихід</string>
+      </property>
+      <property name="icon">
+       <iconset resource="Files.qrc">
+        <normaloff>:/Icons/Icons/Exit.png</normaloff>:/Icons/Icons/Exit.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="4">
+     <widget class="QTableWidget" name="TableFiles">
+      <column>
+       <property name="text">
+        <string>Видалити</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Розмір</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Файл</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLineEdit" name="MergeFileEdit"/>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="MergeFileButtonSelect">
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QCommandLinkButton" name="AddFileButton">
+      <property name="text">
+       <string>Добавити файл</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0" colspan="4">
+     <widget class="QProgressBar" name="progressBar">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+      <property name="textDirection">
+       <enum>QProgressBar::TopToBottom</enum>
+      </property>
+      <property name="format">
+       <string>%p %</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLineEdit" name="AddFileEdit"/>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="AddFileButtonSelect">
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2" colspan="2">
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QCommandLinkButton" name="canselButton">
+       <property name="text">
+        <string>Скасувати</string>
+       </property>
+       <property name="icon">
+        <iconset resource="Files.qrc">
+         <normaloff>:/Icons/Icons/Cancel.ico</normaloff>:/Icons/Icons/Cancel.ico</iconset>
+       </property>
+      </widget>
+      <widget class="QCommandLinkButton" name="MergeFilesButton">
+       <property name="text">
+        <string>Злити у файл</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="Files.qrc"/>
+ </resources>
+ <connections/>
+</ui>
